@@ -1,0 +1,25 @@
+.button {
+    background-color: red;
+    background-image: radial-gradient(circle at center, rgba(255,255,255,0.5), transparent 120%);
+    border-radius: 4px;
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    text-align: center;
+    margin: 5px;
+    cursor: pointer;
+    transition-duration: .25s;
+    vertical-align: top;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(0,0,0,0.6);
+}
+
+.button:active {
+    transform: scale(0.8);
+}

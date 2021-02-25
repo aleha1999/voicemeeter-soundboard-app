@@ -1,0 +1,35 @@
+:host {
+    
+}
+
+.faders {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+app-mixer-channel {
+    flex-grow: 1;
+    min-width: 80px;
+}
+
+.fade-mode {
+    width: 100%;
+    text-align: center;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div {
+        width: 100%;
+        mat-checkbox {
+            margin-right: 30px;
+        }
+
+        mat-slider {
+            width: 50%;
+        }
+    }
+}

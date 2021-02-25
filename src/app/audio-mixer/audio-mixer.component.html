@@ -1,0 +1,9 @@
+<div class="faders">
+    <app-mixer-channel [fadeMode]="fadeMode" [fadeTime]="fadeTime" *ngFor="let channel of channels" [channel]="channel"></app-mixer-channel>
+</div>
+<div class="fade-mode">
+    <div>
+        <mat-checkbox [(ngModel)]="fadeMode">Fade mode</mat-checkbox>
+        <mat-slider [(ngModel)]="fadeTime" min="1000" max="20000" step="100" thumbLabel [displayWith]="formatS"></mat-slider>
+    </div>
+</div>

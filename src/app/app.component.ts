@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { VmApiService } from './vm-api.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'vm-frontend';
+
+  appMode = 2;
+
+  constructor(private vmService: VmApiService) {
+
+  }
+
+  stop() {
+    this.vmService.stop().subscribe();
+  }
 }

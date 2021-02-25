@@ -1,0 +1,6 @@
+<mat-slider vertical (input)="updateSlider($event)" (change)="commit()" [disabled]="disable" [step]="0.2" [(ngModel)]="channel.db" [min]="-60" [max]="12"></mat-slider>
+<div>
+    <p class="db">{{channel.db | number:'1.1-1'}}db</p>
+    <p class="name">{{channel.name}}</p>
+    <button (click)="toggleMute()" mat-raised-button [disabled]='disableMute || !channel.canFade' [color]="channel.muted ? 'warn' : ''">Mute</button>
+</div>

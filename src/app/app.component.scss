@@ -1,0 +1,15 @@
+.bottombar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 64px;
+    background: #333333;
+    position: fixed;
+    bottom: 0;
+    left: 0; 
+    button {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
